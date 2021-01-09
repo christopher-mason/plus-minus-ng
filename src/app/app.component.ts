@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouteConfigLoadEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'plus-minus-ng';
+  display = 0;
+
+  minus() {
+    this.display--;
+  }
+
+  plus() {
+    this.display++;
+  }
 }
